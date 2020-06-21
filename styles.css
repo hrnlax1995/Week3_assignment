@@ -2,7 +2,7 @@
   background-color: #687A8F;
   height:95px;
   width: 1680px;
-  position: absolute;
+  position: relative;
 }
 
 .coronyalogo {
@@ -12,14 +12,15 @@
 
 .contents {
   background-color:#DCC7AA;
-  height:911px;
-  width: 1680px;
+  height:800px;
+  width: 1500px;
+  position: absolute;
 }
 
 .contents h1 {
   color: #FFFFFF;
-  Padding-top: 238px;
-  width: 439px;
+  Padding-top: 100px;
+  width: 20px;
   font-family: Stint Ultra Expanded;
   font-size: 96px;
 }
@@ -29,20 +30,22 @@
   font-size: 175px;
 }
 
-.paw {
-  width: 40%;
-  height: auto;
+.contents paw {
   top: 20px;
+  max-width: 20%
+  max-height:auto;
+  overflow: visible;
+  position: absolute;
 }
 
-.coronyabeer {
+.contents coronyabeer {
   width: 30%;
   height: auto;
   margin-left: auto;
 }
 
-.blackcat {
+.contents blackcat {
   width:30%;
-  height:auto;
+  height: auto;
   display: right;
 }
