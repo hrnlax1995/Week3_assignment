@@ -1,26 +1,29 @@
 .header {
   background-color: #687A8F;
-  height:95px;
-  width: 1680px;
-  position: relative;
+  height:100px;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
 }
 
 .coronyalogo {
   width: 197px;
-  height: 170px;
+  height: 95px;
 }
 
+.hamburgerbar {
+  margin: 20px;
+}
 .contents {
   background-color:#DCC7AA;
-  height:800px;
-  width: 1500px;
-  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 900px;
 }
 
 .contents h1 {
   color: #FFFFFF;
-  Padding-top: 100px;
-  width: 20px;
+  padding:200px 50px;
   font-family: Stint Ultra Expanded;
   font-size: 96px;
 }
@@ -30,22 +33,38 @@
   font-size: 175px;
 }
 
-.contents paw {
-  top: 20px;
-  max-width: 20%
-  max-height:auto;
-  overflow: visible;
+.text-w-background {
+  display: inline-block;
+  position: relative;
+  width: 439px;
+}
+
+.text-w-background h1 {
+  margin-top: 0; /* This is to prevent the pesky margin-collapse issue in css */
+  position: relative;
+  z-index: 1;
+  /* we haven't discussed the z-index property, but it gives an order for
+     elements that need to be layered on top of each other, like h1 over .paw */
+}
+
+.text-w-background .paw {
   position: absolute;
+  padding:300px 100px;
 }
 
-.contents coronyabeer {
-  width: 30%;
-  height: auto;
-  margin-left: auto;
+.paw {
+  top: 10px;
+  z-index: 0;
 }
 
-.contents blackcat {
-  width:30%;
+.coronyabeer {
+  display: inline-block;
+  margin: 100px 400px;
   height: auto;
-  display: right;
+}
+
+.blackcat {
+  display: inline-block;
+  height: auto;
+  margin: 200px 0px;
 }
